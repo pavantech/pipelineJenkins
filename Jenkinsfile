@@ -3,7 +3,7 @@ node
 
 stage('runpython'){
    dir('validation') {
-          sh "for f in pythonscript/*.py; do python \"$f\"; done"
+          sh "ls *.py|xargs -n 1 -P 4 python"
         }
     
 }
