@@ -1,7 +1,7 @@
 node
 {
 
-stages('runpython'){
+stage('runpython'){
    dir('validation') {
           sh "python pythonscript/* "
         }
